@@ -21,7 +21,9 @@ github: https://www.zhihu.com/question/20070065
 为什么要使用ssh公钥，因为在使用Coding提交代码的时候，默认是https的方式，这种方法的不好就是每次提交都要输入密码.
 
 生成SSH公钥：
+
 https://git-scm.com/book/zh/v1/%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E7%9A%84-Git-%E7%94%9F%E6%88%90-SSH-%E5%85%AC%E9%92%A5
+
 https://jingyan.baidu.com/article/a65957f4e91ccf24e77f9b11.html
 
 看不懂上面的，自行百度，实在不会的就每次输入密码好了。
