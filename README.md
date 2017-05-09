@@ -36,6 +36,8 @@
 
 
 待翻译书籍包含14章，每一章后会注上翻译人的名字。
+<br>
+## 至于翻译模板的问题，我一开始是想用latex，但是也没有找到合适的模板，且操作难度相对markdown较大。gitbook很多时候用于电子书的编写，我自己也没有使用过，见过人家弄博客或者教程。我可花点时间看一下。再给大家反馈。或者有了解的朋友，直接给我们科普亦可。
 
 1. How to Learn Bioinformatics
 2. Setting Up and Managing a Bioinformatics Project
@@ -44,8 +46,6 @@
 5. Git for Scientsts
 <br>
 
-#群二维码
-![](file:////Users/song/Desktop/1.jpeg) 
 
 
 本项目遵循GPL许可
