@@ -10,14 +10,14 @@
 
 ## 翻译的内容请及时上传，保证大家了解进度。及时更新README.md文档！
 
-1. How to Learn Bioinformatics
+1. How to Learn Bioinformatics(Guangshuai Jia译)
 2. Setting Up and Managing a Bioinformatics Project
 3. Remedial Unix Shell（王雪松译）
 4. Working with Remote Machines
 5. Git for Scientsts（王雪松译）
 6. Bioinformatics Data
 7. Unix Data Tools
-8. A Rapid Introduction to the R Language(王雪松译暂定)
+8. A Rapid Introduction to the R Language(Guangshuai Jia译)
 9. Working with Range Data
 10. Working with Alignment Data
 11. Bioinformatics Shell Scripting, Writing Pipelines, and Parallelizing Tasks
