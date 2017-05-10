@@ -3,7 +3,7 @@
 
 
 
-1. 先注册github，将注册邮箱发送至我的邮箱，我添加你们为Collaborators.
+1. 先注册github，将注册的用户名发送至我的邮箱，我添加你们为Collaborators.
 	 wangxuesong29@gmail.com(建议大家不用使用qq邮箱，特别是找工作)
 2. 大家花点时间搞清楚什么是git，什么是github。
 3. 在了解git和github的基础上，了解git add, git commit, git push(最常用的三个命令)等命令的意义。
