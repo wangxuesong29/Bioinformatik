@@ -19,7 +19,7 @@
 7. Unix Data Tools
 8. A Rapid Introduction to the R Language(Guangshuai Jia译暂定)
 9. Working with Range Data
-10. Working with Sequence Data (刘阳 译)
+10. Working with Sequence Data（刘阳 译）
 11. Working with Alignment Data（罗开译）
 12. Bioinformatics Shell Scripting, Writing Pipelines, and Parallelizing Tasks
 13. Out-of-Memory Approaches: Tabix and SQLite
