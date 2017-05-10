@@ -41,9 +41,17 @@
 
 1. How to Learn Bioinformatics
 2. Setting Up and Managing a Bioinformatics Project
-3. Remedial Unix Shell
+3. Remedial Unix Shell（王雪松译）
 4. Working with Remote Machines
-5. Git for Scientsts
+5. Git for Scientsts（王雪松译）
+6. Bioinformatics Data
+7. Unix Data Tools
+8. A Rapid Introduction to the R Language(王雪松译暂定)
+9. Working with Range Data
+10. Working with Alignment Data
+11. Bioinformatics Shell Scripting, Writing Pipelines, and Parallelizing Tasks
+12. Out-of-Memory Approaches: Tabix and SQLite
+13. Conclusion
 <br>
 
 
