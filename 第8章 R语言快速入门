@@ -1,4 +1,5 @@
 # 第8章 R语言快速入门
 > 总而言之，数据分析像实验一样，也必须被视为一个开放、高度交互的迭代过程，其实际步骤是选择可能的分支或者树状模式的分段。
-> —— Data analysis and statistics: an expository overview J. W. Tukey and M. B. Wilk (1966)
-
+> - Data analysis and statistics: an expository overview J. W. Tukey and M. B. Wilk (1966)
+> ……探索性数据分析是一种态度，一种灵活状态，愿意寻找我们认为不在的东西，以及我们认为可能存在的那些事物。除了强调图形的重要之外，其工具是次要的。
+> — J. W. Tukey in a comment to E. Parzen (1979)
