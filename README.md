@@ -8,7 +8,7 @@
 
 ## 待翻译书籍包含14章，每一章请各人自己注上翻译人的名字如（木公译），所选章节各人自行协商。
 
-## 翻译的内容请及时上传，保证大家了解进度。
+## 翻译的内容请及时上传，保证大家了解进度。及时更新README.md文档！
 
 1. How to Learn Bioinformatics
 2. Setting Up and Managing a Bioinformatics Project
