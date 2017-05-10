@@ -4,20 +4,20 @@
 书的资源在微信群公告里找，不要在github里上传任何盗版资源的东西！
 
 
-## 翻译的模板依照原文的样式，尽可能的保证排版、顺序的一致性；图片、注释、代码等尽可能保持原文风格；不可遗漏、删减原文内容。
+## 翻译的模板依照原文的样式，尽可能的保证排版、顺序的一致性；图片、注释、代码等尽可能保持原文风格；不可遗漏、删减原文内容。可以使用markdown或者latex以及其他支持版本控制的文本格式，不可使用MS Word。
 
 ## 待翻译书籍包含14章，每一章请各人自己注上翻译人的名字如（木公译），所选章节各人自行协商。
 
 ## 翻译的内容请及时上传，保证大家了解进度。及时更新README.md文档！
 
-1. How to Learn Bioinformatics(Guangshuai Jia译)
+1. How to Learn Bioinformatics
 2. Setting Up and Managing a Bioinformatics Project
 3. Remedial Unix Shell（王雪松译）
 4. Working with Remote Machines
 5. Git for Scientsts（王雪松译）
 6. Bioinformatics Data
 7. Unix Data Tools
-8. A Rapid Introduction to the R Language(Guangshuai Jia译)
+8. A Rapid Introduction to the R Language(王雪松译暂定)
 9. Working with Range Data
 10. Working with Alignment Data
 11. Bioinformatics Shell Scripting, Writing Pipelines, and Parallelizing Tasks
