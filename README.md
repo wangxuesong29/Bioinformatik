@@ -15,7 +15,7 @@
 3. Remedial Unix Shell（王雪松译）
 4. Working with Remote Machines
 5. Git for Scientists（王雪松译）
-6. Bioinformatics Data
+6. Bioinformatics Data(Tang Jie译）
 7. Unix Data Tools
 8. A Rapid Introduction to the R Language(Guangshuai Jia译暂定)
 9. Working with Range Data
