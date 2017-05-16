@@ -16,7 +16,7 @@
 4. Working with Remote Machines
 5. Git for Scientists（王雪松译）
 6. Bioinformatics Data（Tang Jie译）
-7. Unix Data Tools
+7. Unix Data Tools（景若曦译）
 8. A Rapid Introduction to the R Language(Guangshuai Jia译暂定)
 9. Working with Range Data
 10. Working with Sequence Data（刘阳 译）
