@@ -38,3 +38,70 @@ Git能够轻松解该问题并保证软件的及时更新。通过Git，跟进�
 设想另一场景：一个博士后拥有了一个自己的实验室，她的不同软件工具和脚本散落在不同的路径，更有甚者，她丢失了全部的文档。四处散落的代码令同事抓狂；丢失的代码使之无法复现结果进而阻滞后续研究。
 
 Git能够保证工作的连续性并保存所有的项目历史。在一个仓库中集中一整个项目使之保持条理。Git保持每一个commit的变化，因此全部项目的历史都是可以获得的。即使主要开发人员离开也不是一个问题。借助回滚的能力，项目的变更不在危险，新项目的的建立更加轻松。
+
+## 安装Git
+如果你使用的MacOS，通过Homebrew（brew install git）安装git；Linux下，使用apt-get(apt-get install git)。如果你的操作系统没有包管理工具，则可以在Git的官网下载源代码和可执行版本的Git。
+
+## Git基础：创建仓库、追踪文件以及暂存文件和提交更改
+至此，我们已经对Git有了基本的认知，并了解如何在生物信息学的工作中布置工作，那么接下来我们就来了解最最基础的Git概念，创建仓库并告知Git那些文件需要保持trace，以及暂存文件和提交更改。
+
+## Git设置：告诉Git你是谁
+因为Git旨在帮助你处理协同编辑的文件，你需要告诉它你是谁以及你的邮箱地址是什么。如下操作：
+$ git config --global user.name "Sewall Wright"
+$ git config --global user.email "swright@adaptivelandscape.org"
+确保使用你自己的名字和邮箱。我们通过subcommands与Git互动，格式如下：git <subcommands>。Git拥有众多subcommand，但是你在日常的工作中只需一小部分。
+
+另一个有用的Git设置是终端颜色。许多的subcommand使用终端颜色在视觉上显示变化（如红色为删除、绿色为新的更改）。设置如下：
+$ git config --global color.ui true
+
+## git init和git clone：创建仓库
+我们首先需要初始化一个目录作为Git仓库，以开始Git之旅。一个仓库是一个接受版本控制的目录。它包含你当前的工作文件和某一时间点的项目快照。快照的Git术语是commit。使用Git的根本是创建和操作这些commit：创建、查看、共享和比较。
+
+Git有两种主要的方式来创建仓库：初始化一个已存在的目录或clone一个存在于其他地方的仓库。无论哪种方式，其结果都是Git视其为一个仓库。Git只管理仓库中的文档及附属目录，对仓库以外的内容无能力力。
+
+让我们以第二章创建的zmays-snps/项目为例，创建一个Git仓库。使用命令进入zmays-snps路径并使用Git subcommand初始化：
+$ git init
+Initialized empty Git repository in /Users/vinceb/Projects/zmays-snps/.git/
+git init在zmays-snps中创建一个叫做.git/的隐藏目录（ls -a显示所有文档）。Git在我们未知的情况下使用.git/完成仓库的管理任务。但是，不要更改或移除该目录下的任何东西，该目录只应由Git进行操作。因而我们使用诸如git init的命令与之交互。
+
+clone已存在的仓库是另一种仓库创建方式。你可以从任意的地方clone：从你的文件系统的某处、从你的局域网或者从互联网的某处。当下，通过仓库托管服务如GitHub和Bitbucket进行clone是非常普及的。
+
+我们练习一下如何从GitHub中clone一个仓库。针对此例，我们将从Li's GitHub页面clone Seqtk代码。Seqtk是SEQuence ToolKit的缩写，其处理FASTQ和FASTA文件的功能非常强大。首先，访问GitHub仓库并四处看看。所有的GitHub仓库都有一个URL语法：user/repository。clone URL在页面的右侧，你可以拷贝该链接以clone该仓库。
+
+现在，终端命令进入zmays-snps/上一级路径。路径的选择无碍；我选择user/repository目录进行clone和编译其他工具。再次路径：
+$ git clone git://github.com/lh3/seqtk.git Cloning into 'seqtk'...
+remote: Counting objects: 92, done.
+remote: Compressing objects: 100% (47/47), done. remote: Total 92 (delta 56), reused 80 (delta 44) Receiving objects: 100% (92/92), 32.58 KiB, done. Resolving deltas: 100% (56/56), done.
+
+seqtk代码由git init克隆岛你的本地目录，同原来GitHub仓库一样。clone能够使你获得Heng Li's发布的GitHub仓库更新内容，而你却无权直接对其仓库中的内容进行修改。
+
+现在，如果你在终端输入cd命令进入seqtk/并输入ls命令，你将看到seqtk的源码：
+$ cd seqtk
+$ls
+Makefile README.md khash.h kseq.h seqtk.c
+尽管方式不同，zmays-snps/和seqtk/都是Git仓库。
+
+## Git中跟踪文件：git add和git status分部I
+
+尽管你已经初始化zmays-snps/作为一个Git仓库，Git却不会自动跟踪每一个目录下文件。相反，你需要通过git add 告诉Git哪些文件需要被跟踪。而这正式Git的神奇之处，生物信息学工作中并不需要追踪所有文件，如大文件和中间结果或者我们可以轻易复现的内容。
+
+跟踪之前，让我们使用git status来查看文件的Git状态（进入zmays-snps/路径）：
+$ git status
+# On branch master #
+# Initial commit #
+# Untracked files:
+  #
+#
+#
+#
+nothing added to commit but untracked files present (use "git add" to track)
+
+
+
+
+
+
+
+
+
+
