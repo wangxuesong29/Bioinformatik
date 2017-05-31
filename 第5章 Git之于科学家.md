@@ -91,7 +91,7 @@ $ cd seqtk$lsMakefile README.md khash.h kseq.h seqtk.c
 ```
 尽管方式不同，zmays-snps/和seqtk/都是Git仓库。
 
-## Git中跟踪文件：git add和git status分部I
+## Git中跟踪文件：git add和git status第一部分
 
 尽管你已经初始化zmays-snps/作为一个Git仓库，Git却不会自动跟踪每一个目录下文件。相反，你需要通过git add 告诉Git哪些文件需要被跟踪。而这正式Git的神奇之处，生物信息学工作中并不需要追踪所有文件，如大文件和中间结果或者我们可以轻易复现的内容。
 
@@ -109,6 +109,37 @@ git status告诉我们：
 （1）我们处于*master*分支，该分支是默认分支。分支的设定使我们同事能够在项目的不同版本中工作、切换。简单、功能强大的git分支是其如此流行的一个原因。我们暂时只在*master*分支工作，在以后的章节中会涉及其他分支。
 
 （2）我们有一个“Untracked files”列表，其包含项目根目录下的所有的资料。因为我们还没有告知Git需要跟踪的内容，所以Git没有提交任何东西。
+
+__git status__是最常用的__git__命令之一，我们需要牢记它。__git stauts__描述当前项目仓库的状态：做了什么更改，那些内容在下一次将被提交，和未被跟踪。本章余下的内容将大量使用__git status__命令。
+
+让我们__git add__以告知__git__跟踪*__zmays-snps/ directory__*路径中的__*README*__和*__data/README__*路径下的文件：
+
+```sh
+$ git add README data/README
+```
+现在，__Git__将跟踪__*README*__和*__data/README__*路径下的文件。我们可以再次运行__git status__加以验证：
+
+```sh
+$lsREADME analysis data scripts $ git status# On branch master## Initial commit## Changes to be committed:#	（use "git rm --cached <file>..." to unstage）##			new file:	README 	(1)#			new file: data/README	## Untracked files:# (use "git add <file>..." to include in what will be committed) ## data/seqs/		(2)
+```
+
+(1)  在*“changes to be committed.”*中，注意此刻__Git__是如何将__*README*__和*__data/README__*路径下的文件作为新文件列出的。若我们此刻做出提交，__commit__命令会对__git add__命令发出时的文件版本做一个快照。
+
+(2)  __*data/seqs/*__未被跟踪，因为我们没有告知__Git__需要这样做。合宜地,__git status__提醒我们可以使用__git add__跟踪这些文件。
+
+##Git中的暂存文件：git add 和git status第二部分
+
+__Git__中，被跟踪文件和文件被暂存至下次提交清单中是有区别的。
+
+
+
+
+
+
+
+
+
+
 
 
 
