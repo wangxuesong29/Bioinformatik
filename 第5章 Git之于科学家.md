@@ -77,7 +77,9 @@ clone已存在的仓库是另一种仓库创建方式。你可以从任意的地
 现在，终端命令进入zmays-snps/上一级路径。路径的选择无碍；我选择user/repository目录进行clone和编译其他工具。再次路径：
 
 ```sh
-$ git clone git://github.com/lh3/seqtk.git Cloning into 'seqtk'...remote: Counting objects: 92, done.remote: Compressing objects: 100% (47/47), done. 
+$ git clone git://github.com/lh3/seqtk.git Cloning into 'seqtk'...
+remote: Counting objects: 92, done.
+remote: Compressing objects: 100% (47/47), done. 
 remote: Total 92 (delta 56), reused 80 (delta 44) 
 Receiving objects: 100% (92/92), 32.58 KiB, done. 
 Resolving deltas: 100% (56/56), done.
@@ -87,7 +89,9 @@ seqtk代码由git init克隆岛你的本地目录，同原来GitHub仓库一样�
 现在，如果你在终端输入cd命令进入seqtk/并输入ls命令，你将看到seqtk的源码：
 
 ```sh
-$ cd seqtk$lsMakefile README.md khash.h kseq.h seqtk.c
+$ cd seqtk
+$ls
+Makefile README.md khash.h kseq.h seqtk.c
 ```
 尽管方式不同，zmays-snps/和seqtk/都是Git仓库。
 
@@ -102,7 +106,14 @@ $ cd seqtk$lsMakefile README.md khash.h kseq.h seqtk.c
 
 ```sh
 git status
-# On branch master (1)# Initial commit # Untracked files: (2)####nothing added to commit but untracked files present (use "git add" to track)
+# On branch master (1)
+# Initial commit 
+# Untracked files: (2)
+#
+#
+#
+#
+nothing added to commit but untracked files present (use "git add" to track)
 ```
 git status告诉我们：
 
@@ -120,7 +131,21 @@ $ git add README data/README
 现在，__Git__将跟踪__*README*__和*__data/README__*路径下的文件。我们可以再次运行__git status__加以验证：
 
 ```sh
-$lsREADME analysis data scripts $ git status# On branch master## Initial commit## Changes to be committed:#	（use "git rm --cached <file>..." to unstage）##			new file:	README 	(1)#			new file: data/README	## Untracked files:# (use "git add <file>..." to include in what will be committed) ## data/seqs/		(2)
+$ls
+README analysis data scripts $ git status
+# On branch master
+#
+# Initial commit
+#
+# Changes to be committed:
+#	（use "git rm --cached <file>..." to unstage）
+#
+#			new file:	README 	(1)
+#			new file: data/README	
+#
+# Untracked files:
+# (use "git add <file>..." to include in what will be committed) #
+# data/seqs/		(2)
 ```
 
 (1)  在*“changes to be committed.”*中，注意此刻__Git__是如何将__*README*__和*__data/README__*路径下的文件作为新文件列出的。若我们此刻做出提交，__commit__命令会对__git add__命令发出时的文件版本做一个快照。
@@ -129,7 +154,21 @@ $lsREADME analysis data scripts $ git status# On branch master## Initial com
 
 ##Git中的暂存文件：git add 和git status第二部分
 
-__Git__中，被跟踪文件和文件被暂存至下次提交清单中是有区别的。
+__Git__中，被跟踪文件和文件被暂存至下次提交清单中是有差异的。这个细微的差异常常使初学者困惑。一个文件被跟踪意味着__Git__知道它的存在。一个文件不仅被跟踪，而且最后一次的更改被暂存在下一次提交的清单中(见图5-1)。
+
+观察一个由__git add__添加跟踪的文件被更改之后的变化能够理清上述差异。更改不会自动地包含在下一次的提交中清单中，我们需使用明确地暂存它们——再次使用__gitadd__。部分疑惑在于，__git add__跟踪新文件并暂存已被跟踪文件的变化。我们通过一个列子来整理思绪。
+
+
+
+<p>
+<img src="第5张图片/5_1.png" alt>
+<em> 图5-1 分离的Git工作树(文件均在你的仓库中)，暂存区(文件包含在下一次提交的清单中)以及已提交的更改(每一时刻项目某个版本的快照)；对一个未被跟踪的文件执行git add以开始跟踪它和暂存它，而对于已经被跟踪的文件则git add将暂存保存到下次提交的清单中。
+</p>
+
+
+
+
+
 
 
 
